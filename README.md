@@ -26,45 +26,11 @@ Before running the BBS Theme Tool, ensure you have the following installed:
 
 ## Installation
 
-1.  **Clone the repository:**
+1. Download the zip file from the release.
+2. unzip the zip file
+3. click on the theme.py to  run it
 
-    ```
-    git clone [your repository link]
-    cd [your repository directory]
-    ```
-
-2.  **Install dependencies (if any are listed in a `requirements.txt`):**
-
-    ```
-    pip install -r requirements.txt
-    ```
-
-## Usage
-
-1.  **Prepare Assets:** Ensure the following files are present in the `assets` folder:
-
-    *   `font.ttf` (optional: a custom font file)
-    *   `myicon.png` (application icon)
-    *   `checkbox_check.png` (checked checkbox image)
-    *   `checkbox_nocheck.png` (unchecked checkbox image)
-    *   `reload.png` (reload icon)
-
-2.  **Run the application:**
-
-    ```
-    python theme.py
-    ```
-
-3.  **Using the Interface:**
-
-    *   Click the "Browse" button to select the root directory of your BBS configuration (the directory containing the `bbs` folder).
-    *   Select either "Import" or "Export" mode by clicking the corresponding checkbox.
-    *   **Import Mode:**  Select a theme from the list and click "Execute" to apply it.
-    *   **Export Mode:** Enter a name for the new theme and click "Execute" to create a new theme based on the current configuration.
-    *   Use the search bar to filter themes in Import mode.
-    *   Click the reload icon to refresh the theme list.
-
-## Directory Structure
-
-The application expects a specific directory structure within the selected config path:
-
+## Credit
+*  **BBS MOD**: mchouse
+*  **The code**: AI (chatgpt,deepseek,...)
+*  **the program**: Diobede
