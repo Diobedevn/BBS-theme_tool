@@ -31,6 +31,6 @@ Before running the BBS Theme Tool, ensure you have the following installed:
 3. click on the theme.py to  run it
 
 ## Credit
-*  **BBS MOD**: mchouse
+*  **BBS MOD**: mchorse
 *  **The code**: AI (chatgpt,deepseek,...)
 *  **the program**: Diobede
