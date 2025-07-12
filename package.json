@@ -1,12 +1,17 @@
 {
   "name": "bbs-theme-tool",
   "version": "1.0.0",
-  "type": "module",
+  "description": "BBS Theme Tool for Minecraft mod - Python application with web documentation",
+  "main": "index.js",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "dev": "python -m http.server 8000",
+    "build": "mkdir -p dist && cp -r . dist/ && echo 'Build completed'",
+    "preview": "python -m http.server 8000 --directory dist",
+    "start": "python theme.py"
   },
+  "keywords": ["bbs", "minecraft", "theme", "tool"],
+  "author": "Diobede",
+  "license": "MIT",
   "devDependencies": {
     "vite": "^5.0.0"
   }
