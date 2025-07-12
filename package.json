@@ -4,7 +4,7 @@
   "description": "BBS Theme Tool for Minecraft mod - Python application with web documentation",
   "main": "index.js",
   "scripts": {
-    "dev": "python -m http.server 8000",
+    "dev": "node server.js",
     "build": "mkdir -p dist && cp -r . dist/ && echo 'Build completed'",
     "preview": "python -m http.server 8000 --directory dist",
     "start": "python theme.py"
