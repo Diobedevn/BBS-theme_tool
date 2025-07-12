@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBS Theme Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>BBS Theme Tool</h1>
+            <p>Create and customize your BBS themes</p>
+        </header>
+
+        <div class="main-content">
+            <div class="sidebar">
+                <div class="section">
+                    <h3>Theme Selection</h3>
+                    <div class="search-container">
+                        <input type="text" id="themeSearch" placeholder="Search themes..." class="search-input">
+                    </div>
+                    <div class="theme-list" id="themeList">
+                        <!-- Themes will be populated here -->
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3>Color Scheme</h3>
+                    <div class="color-grid">
+                        <div class="color-item">
+                            <label>Background:</label>
+                            <input type="color" id="bgColor" value="#1a1a1a">
+                        </div>
+                        <div class="color-item">
+                            <label>Text:</label>
+                            <input type="color" id="textColor" value="#00ff00">
+                        </div>
+                        <div class="color-item">
+                            <label>Accent:</label>
+                            <input type="color" id="accentColor" value="#ffff00">
+                        </div>
+                        <div class="color-item">
+                            <label>Border:</label>
+                            <input type="color" id="borderColor" value="#ffffff">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3>Options</h3>
+                    <div class="options">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="enableBorder">
+                            <span class="checkmark"></span>
+                            Enable Border
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="enableShadow">
+                            <span class="checkmark"></span>
+                            Enable Shadow
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="pixelFont" checked>
+                            <span class="checkmark"></span>
+                            Pixel Font
+                        </label>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3>Actions</h3>
+                    <div class="button-group">
+                        <button class="btn btn-primary" id="applyTheme">Apply Theme</button>
+                        <button class="btn btn-secondary" id="exportTheme">Export Theme</button>
+                        <button class="btn btn-secondary" id="resetTheme">Reset</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="preview-area">
+                <div class="preview-header">
+                    <h3>Preview</h3>
+                    <div class="preview-controls">
+                        <button class="btn btn-small" id="fullscreenPreview">Fullscreen</button>
+                    </div>
+                </div>
+                <div class="preview-container" id="previewContainer">
+                    <div class="bbs-preview" id="bbsPreview">
+                        <div class="bbs-header">
+                            <span class="bbs-title">█ BBS SYSTEM v2.1 █</span>
+                        </div>
+                        <div class="bbs-content">
+                            <div class="bbs-menu">
+                                <div class="menu-item">[1] Main Board</div>
+                                <div class="menu-item">[2] File Areas</div>
+                                <div class="menu-item">[3] Message Areas</div>
+                                <div class="menu-item">[4] User Stats</div>
+                                <div class="menu-item">[5] Games</div>
+                                <div class="menu-item">[G] Goodbye</div>
+                            </div>
+                            <div class="bbs-status">
+                                <div class="status-line">User: SYSOP | Time: 23:42 | Calls: 1337</div>
+                                <div class="status-line">Last Caller: H4CK3R from 555-0123</div>
+                            </div>
+                        </div>
+                        <div class="bbs-footer">
+                            <span class="prompt">Command [1-5,G]: _</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
